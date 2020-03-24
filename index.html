@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora INSS</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--		<script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>-->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="calculator.js"></script>
+    <script src="numeral.min.js"></script>
+    <script src="https://kit.fontawesome.com/2a0eb7e394.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class='jumbotron text-center'>
+        <img class="calculadora" src="img/calculator.png" alt="Calculadora.">
+        <h1 class="calculadora">Calculadora INSS 2020</h1>
+    </div>
+
+    <div class="container-fluid" style="margin-top:30px">
+        <div class="row">
+            <div class="col-12">
+                <!--<img class="calculadora" src="img/calculator.png" alt="Calculadora.">-->
+
+                <p>A partir de <strong>01/03/2020</strong> o <strong>cálculo do INSS</strong> terá novas regras.<br> Este simulador vai te ajudar a entender melhor como o novo cálculo será realizado!</br>
+                </p>
+                <p>Para iniciar, digite abaixo o valor do seu salário bruto:</p>
+                <div class="input-group mb-3 col-11 col-md-6 mx-auto">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text">R$</span>
+                    </div>
+                    <input id="entradaSalario" type="number" class="form-control text-left" onKeyUp="calculate()" placeholder="0,00">
+                    <!-- data-inputmask="'alias': 'decimal', 'radixpoint': ',', 'groupSeparator': '.', 'autoGroup': true, 'digits': 2, 'digitsOptional': false, 'placeholder': '0,00'"-->
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table id="tabela" class="table table-bordered table-hover col-6 mx-auto text-center align-self-center">
+                <thead class="thead-dark ">
+                    <tr>
+                        <th scope="col">Salario de Contribuição</th>
+                        <th scope="col">Alíquota</th>
+                        <th scope="col">Valor descontado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="text-left">Até R$ 1.039,00</th>
+                        <td class="align-middle">7,5%</td>
+                        <td id="tdAliq1" class="align-middle">R$ 0,00</td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">De R$ 1.039,01 a R$ 2.089,60</th>
+                        <td class="align-middle">9%</td>
+                        <td id="tdAliq2" class="align-middle">R$ 0,00</td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">De R$ 2.089,61 a R$ 3.134,40</th>
+                        <td class="align-middle">12%</td>
+                        <td id="tdAliq3" class="align-middle">R$ 0,00</td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">De R$ 3.134.41 a R$ 6.101.06</th>
+                        <td class="align-middle">14%</td>
+                        <td id="tdAliq4" class="align-middle">R$ 0,00</td>
+                    </tr>
+                </tbody>
+                <tfoot class="thead-dark">
+                    <tr>
+                        <th colspan="2">Desconto Total</th>
+                        <td id="tdTotal">R$ 0,00 </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <!--div class="l_c_h">
+			<div class="c_h">
+		    	<div class="left_c">
+		            <div class="left right_c left_icons">
+		                   <a href="#" class="mini" style="font-size:23px;">+</a>
+		            </div>
+		            <div class="left center_icons">
+		                 Chat
+		            </div>
+		        </div>
+		        <div class="clear"></div>
+		    </div>
+		    <div class="chat_container" style="display: none;">
+		    	<iframe class="iframe"
+				    allow="microphone;"
+				    width="300"
+				    height="430"
+				    src="https://console.dialogflow.com/api-client/demo/embedded/76c6b1ab-b3f0-49bf-8d9d-49dfbcd072e4"
+				    style=".server-response{background-color: #343a40;}">
+				</iframe>
+		    </div>
+		</div-->
+</body>
+
+</html>
