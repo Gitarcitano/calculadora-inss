@@ -42,8 +42,8 @@ header {
 	border: none;
 }
 
-p {
-	text-align: center;
+a:hover {
+  color: #fff;
 }
 
 main {
@@ -83,6 +83,7 @@ td, th {
   	animation: slideMe .3s ease-in;
 }
 
+
 @keyframes slideMe {
 	0%{
 		transform: translateX(-1000px);
@@ -90,6 +91,20 @@ td, th {
 	100%{
 		transform: skewX(0deg);
 	}
+}
+
+.rcw-conversation-container .rcw-header, .rcw-launcher {
+  background-color: #343a40;
+}
+
+.rcw-response, .rcw-snippet {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.rcw-link, a:hover{
+  font-size: inherit;
+  color: #fff;
 }
 
 .input-group mb-3 {
