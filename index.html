@@ -2,10 +2,29 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <title>Calculadora INSS</title>
-
     <link rel="stylesheet" href="reset.css">
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,es6"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/isomorphic-fetch@2.2.1/fetch-npm-browserify.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,800&display=swap" rel="stylesheet">
+    <script src="https://curriculo.sesisenaisp.org.br/curriculo/arterhweb/js/jquery.min.js"></script>
+ 
+    <link href="https://portalrh.sesisenaisp.org.br/arte/img/sissa_script/css/2.fb64e31e.chunk.css" rel="stylesheet">
+    <link href="https://portalrh.sesisenaisp.org.br/arte/img/sissa_script/css/main.33cbc262.chunk.css" rel="stylesheet">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>    
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+
+
+    
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.js'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,6 +34,8 @@
     <script type="text/javascript" src="calculator.js"></script>
     <script src="numeral.min.js"></script>
     <script src="https://kit.fontawesome.com/2a0eb7e394.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -78,6 +99,14 @@
             </table>
         </div>
     </div>
+
+    <div id="root"></div>
+
+    <script>!function (l) { function e(e) { for (var t, r, n = e[0], o = e[1], u = e[2], i = 0, a = []; i < n.length; i++)r = n[i], Object.prototype.hasOwnProperty.call(c, r) && c[r] && a.push(c[r][0]), c[r] = 0; for (t in o) Object.prototype.hasOwnProperty.call(o, t) && (l[t] = o[t]); for (s && s(e); a.length;)a.shift()(); return p.push.apply(p, u || []), f() } function f() { for (var e, t = 0; t < p.length; t++) { for (var r = p[t], n = !0, o = 1; o < r.length; o++) { var u = r[o]; 0 !== c[u] && (n = !1) } n && (p.splice(t--, 1), e = i(i.s = r[0])) } return e } var r = {}, c = { 1: 0 }, p = []; function i(e) { if (r[e]) return r[e].exports; var t = r[e] = { i: e, l: !1, exports: {} }; return l[e].call(t.exports, t, t.exports, i), t.l = !0, t.exports } i.m = l, i.c = r, i.d = function (e, t, r) { i.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r }) }, i.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, i.t = function (t, e) { if (1 & e && (t = i(t)), 8 & e) return t; if (4 & e && "object" == typeof t && t && t.__esModule) return t; var r = Object.create(null); if (i.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: t }), 2 & e && "string" != typeof t) for (var n in t) i.d(r, n, function (e) { return t[e] }.bind(null, n)); return r }, i.n = function (e) { var t = e && e.__esModule ? function () { return e.default } : function () { return e }; return i.d(t, "a", t), t }, i.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, i.p = "/"; var t = this.webpackJsonpchatwidget_sissa = this.webpackJsonpchatwidget_sissa || [], n = t.push.bind(t); t.push = e, t = t.slice(); for (var o = 0; o < t.length; o++)e(t[o]); var s = n; f() }([])</script>
+
+    <script src="https://portalrh.sesisenaisp.org.br/arte/img/sissa_script/js/2.9365c197.chunk.js"></script>
+
+    <script src="https://portalrh.sesisenaisp.org.br/arte/img/sissa_script/js/main.e92718e9.chunk.js"></script>
 </body>
 
 </html>
